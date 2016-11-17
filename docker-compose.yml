@@ -13,6 +13,8 @@ services:
     depends_on:
       - db
     image: wordpress
+    volumes:
+      - ~/Documents/wordpress:/var/www/html/
     links:
       - db
     ports:
